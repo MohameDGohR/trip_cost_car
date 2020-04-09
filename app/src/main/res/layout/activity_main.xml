@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#6FDF44"
+        android:onClick="tc"
+        android:padding="10dp"
+        android:text=" تكلفتى "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:bootstrapBrand="info"
+        app:bootstrapHeading="h3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundedCorners="true" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/auto1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:gravity="center"
+        android:hint="المسافة بالكيلو متر 0  "
+        android:padding="10dp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="xl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/auto2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:hint="اكتب وجهتك "
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:onClick="find"
+        android:text="التكلفة"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:onClick="map"
+        android:text="اظهار الطريق على الخريطة "
+        app:bootstrapBrand="info"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/cpt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:hint="كم كيلو تسير بلتر البنزين"
+        android:padding="10dp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="xl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto1" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/cp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:hint="التكلفة لتر البنزين "
+        android:padding="10dp"
+
+        app:bootstrapBrand="info"
+        app:bootstrapSize="xl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpt" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/costing"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="تكلفة الرحلة"
+
+        android:padding="10dp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="xl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
